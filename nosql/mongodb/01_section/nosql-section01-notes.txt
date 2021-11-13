@@ -1,0 +1,22 @@
+Getting Started
+on command prompt window -> type 'mongod' - to start the mongodb server on port 27017 by default
+control 'c' - to stop the mongodb server
+
+on another prompt window -> type 'mongo' - to start the mongodb shell
+type 'show dbs' - view databases listed 
+type 'use <database_name> - creates it, if it does not exists
+
+type 'exit' - exits the shell
+
+db.products.insertOne({
+   name: "Stickley Sofa",
+   price: 2599.99
+})
+
+db.products.insertOne({
+   name: "Bar Stool",
+   price: 99.99,
+   description: "Some description of product"
+})
+
+db.find().pretty() - list the products in the document
